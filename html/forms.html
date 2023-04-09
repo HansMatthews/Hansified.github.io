@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/forms-style.css">
+    <script src="/js/average.js"></script>
+    <title>Forms</title>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">Go Back</a>
+    </nav>
+    
+    <div class="form-container">
+        <div class="form-item">
+            <form id="form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="subject1">CC103:</label><br>
+                <input type="number" id="subject1" name="subject1" min="0" max="100"><br><br>
+                <label for="subject2">IS101:</label><br>
+                <input type="number" id="subject2" name="subject2" min="0" max="100"><br><br>
+                <label for="subject3">WEBDEV:</label><br>
+                <input type="number" id="subject3" name="subject3" min="0" max="100"><br><br>
+                <label for="subject4">PE:</label><br>
+                <input type="number" id="subject4" name="subject4" min="0" max="100"><br><br>
+                <button type="button" onclick="addData()">Add Data</button>
+                <button type="button" onclick="clearTable()">Clear Table</button>
+              </form> 
+        </div>
+        <div class="table-container">
+            <div class="table-item">
+                <table id="table">
+                    <tr>
+                      <th class="thName">Name</th>
+                      <th>CC103</th>
+                      <th>IS101</th>
+                      <th>WEBDEV</th>
+                      <th>PE</th>
+                      <th>GWA</th>
+                    </tr>
+                  </table>
+            </div>
+        </div>      
+    </div>
+
+</body>
+</html>
